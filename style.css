@@ -1,0 +1,146 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+
+  animation: shakebody 6s linear infinite;
+
+}
+
+ 
+.sky {
+  background-image: url(background.jpg);
+  background-repeat: repeat-x;
+  width: 800vw;
+  height: 100vw;
+  position: absolute;
+  #animation: carmove 1s linear infinite;
+}
+
+.tree {
+  background-image: url(trees.png);
+  width: 100%;
+  height: 100vh;
+  top: 200px;
+  background-repeat: repeat-x;
+  position: absolute;
+  animation: carmove 10s linear infinite;
+}
+
+
+.track {
+  background-image: url(track.png);
+  width: 900vw;
+  height: 900vw;
+  top: 32vw;
+  background-repeat: repeat-x;
+  position: absolute;
+  animation: carmove 10s linear infinite;
+}
+ .car
+ {  background-image: url(car_body.png);
+  width: 800px;
+  height: 200px;
+  background-size: cover;
+  background-repeat: repeat-x;
+  top: 30vw;
+  left: 29vw;
+  position: absolute;
+  animation: shake linear 0.6s infinite;
+ }
+.wheel1 img {
+  width: 140px;
+  position: relative;
+ bottom: -4vw;
+  left: 105px;
+  animation: wheelrotation .6s linear infinite;
+}
+.wheel2 img {
+  width: 140px;
+  position: relative;
+  bottom: 1vw;
+  left: 505px;
+  animation: wheelrotation .6s linear infinite;
+
+
+}
+
+@media and (max-width:800) {}
+
+@keyframes wheelrotation {
+  100% {
+    transform: rotate(360deg);
+
+  }
+
+}
+
+@keyframes carmove {
+  100% {
+    translate: -500vw;
+
+  }
+
+}
+
+@keyframes shake {
+  0% {
+    transform: rotate(-1deg);
+  }
+
+  50% {
+    transform: rotate(1deg);
+
+  }
+
+  100% {
+    transform: rotate(1deg);
+
+  }
+}
+
+@keyframes shakebody {
+  0% {
+    translate: -50px;
+  }
+
+  50% {
+    translate: 50px;
+
+  }
+
+  100% {
+    translate: -50px;
+
+  }
+}
+
+@keyframes block {
+  0% {
+    width: 2px;
+    height: 20px;
+    top: 0;
+    border: black solid 2px;
+    color: black;
+  }
+
+  50% {
+    width: 2px;
+    height: 20px;
+    border: black solid 2px;
+    color: black;
+    top: 50%;
+
+  }
+
+  100% {
+    width: 2px;
+    height: 20px;
+    bottom: 0;
+    border: black solid 2px;
+    color: black;
+  }
+
+}
